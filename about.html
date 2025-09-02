@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - EmTeK CoE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+   
+    /* Banner styles */
+    .about-banner {
+      height: 80vh;
+      background: url('about banner.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: white;
+      text-align: center;
+    }
+    .about-banner::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(28, 29, 29, 0.5);
+    }
+    .about-banner h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .card h4 {
+      font-weight: bold;
+    }
+    .segment-img {
+      width: 200px;
+      height: 120px;
+      object-fit: contain;
+      margin: 0 auto;
+      display: block;
+    }
+    .card {
+      border-radius: 15px;
+    }
+    /* Footer */
+    footer {
+      background: #4f4fcd;
+      color: #eee;
+      padding: 40px 0 20px;
+    }
+    footer h3 {
+      color: #fff;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    footer ul li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    footer ul li a {
+      color: #ddd;
+      text-decoration: none;
+    }
+    footer ul li a:hover {
+      color: #42d6ea;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      background: color #151515;
+      color: white;
+      border-top: 0 0 8px 8px;;
+      padding-top: 15px;
+    }
+    .social-links img {
+      width: 28px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-light shadow-sm">
+    <div class="container d-flex align-items-center justify-content-between py-2">
+      <a href="home.html" class="d-flex align-items-center">
+        <img src="emtek-1.png" alt="Emtek CoE Logo" style="max-height:60px; height:auto; width:auto;">
+      </a>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link fw-bold" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="facilities.html">Facilities</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="infrastructure.html">Infrastructure</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="career.html">Career</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Banner Section -->
+  <section class="about-banner">
+    <h1>About Us</h1>
+  </section>
+
+  <!-- About EMTEK CoE -->
+  <section class="py-5" style="background-color: #a9dfe7";>
+    <div class="container">
+      <h2 class="text-center mb-4">About EmTeK CoE</h2>
+      <p class="text-center mb-5">
+        EmTeK CoE is dedicated to building a robust ecosystem in Industry 4.0, AI, Cyber Security, and Analytics. It empowers startups, entrepreneurs, and industries by providing mentorship, infrastructure, and innovation opportunities.
+      </p>
+      <div class="row">
+        <!-- Mission -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h4 class="text-primary"><i class="bi bi-rocket-takeoff-fill me-2"></i>Mission</h4>
+              <p>Accelerate indigenous innovation and entrepreneurship in Electronics, EVs, Embedded Systems, and IoT.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Vision -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h4 class="text-success"><i class="bi bi-eye-fill me-2"></i>Vision</h4>
+              <p>To be a premier national hub for Industry 4.0 excellence, fostering scalable and globally competitive startups.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Objectives -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h4 class="text-warning"><i class="bi bi-flag-fill me-2"></i>Objectives</h4>
+              <ul>
+                <li>Support 150+ startups in Industry 4.0</li>
+                <li>Enable technology commercialization</li>
+                <li>Bridge academia, industry & R&D</li>
+                <li>Facilitate funding & global exposure</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- About STPI Section -->
+<section class="py-5" style="background-color: #eba770;">
+  <div class="container">
+    <h2 class="text-center mb-4">About STPI</h2>
+    <p class="text-center mb-5">
+      Software Technology Parks of India (STPI), under MeitY, Govt. of India, drives IT/ITES exports, startup incubation, and innovation across India.
+    </p>
+    <div class="row">
+      <!-- Role -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="text-primary"><i class="bi bi-gear-fill me-2"></i>Role</h4>
+            <ul>
+              <li>Promote IT exports</li>
+              <li>Develop tech parks & incubation centers</li>
+              <li>Support entrepreneurs</li>
+              <li>Enable R&D collaborations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- History -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="text-success"><i class="bi bi-clock-history me-2"></i>History</h4>
+            <ul>
+              <li>Established in 1991</li>
+              <li>First center in New Delhi</li>
+              <li>Expanded to 64+ cities</li>
+              <li>Boosted India’s IT exports</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Presence -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="text-warning"><i class="bi bi-globe2 me-2"></i>Presence</h4>
+            <ul>
+              <li>64 centers across India</li>
+              <li>Presence in Tier-1 & Tier-2 cities</li>
+              <li>Provides incubation facilities</li>
+              <li>Acts as bridge between govt. & startups</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Expected Major Segments 2025 -->
+<section class="py-5" style="background: linear-gradient(to right, #0f7deb, #73a8dd);">
+  <div class="container">
+    <h1 class="text-center mb-5 fw-bold">Next-Generation Opportunities For Enterpreneurs</h1>
+    <div class="row text-center">
+      
+      <div class="col-md-3 mb-4">
+        <div class="card shadow border-0 h-100 bg-lightblue">
+          <div class="card-body">
+            <img src="other images/big data 1.png" class="segment-img" alt="Big Data">
+            <p class="mt-3 fw-semibold">Big Data & Analytics</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card shadow border-0 h-100 bg-lightgreen">
+          <div class="card-body">
+            <img src="other images/iot 1.png" class="segment-img" alt="IoT">
+            <p class="mt-3 fw-semibold">Internet of Things (IoT)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card shadow border-0 h-100 bg-lightyellow">
+          <div class="card-body">
+            <img src="other images/cybersecurity.png" class="segment-img" alt="Cybersecurity">
+            <p class="mt-3 fw-semibold">Cybersecurity</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card shadow border-0 h-100 bg-lightpink">
+          <div class="card-body">
+            <img src="other images/AI1.png" class="segment-img" alt="AI">
+            <p class="mt-3 fw-semibold">Artificial Intelligence</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CSS for equal image sizing and card colors -->
+<style>
+  .segment-img {
+    width: 200px;       
+    height: 120px;      
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Custom background colors for cards */
+  .bg-lightblue { background-color: #ffffff; }   /* light blue */
+  .bg-lightgreen { background-color: #fefefc; }  /* light green */
+  .bg-lightyellow { background-color: #fafafa; } /* light yellow */
+  .bg-lightpink { background-color: #fbfbf7; }   /* light pink */
+
+  /* Optional: make cards look softer */
+  .card {
+    border-radius: 15px;
+  }
+</style>
+
+
+
+
+
+<!-- EmTeK Industry 4.0 Model -->
+<section class="py-5" style="background: linear-gradient(to right, #f8f9fa, #e9ecef);">
+  <div class="container">
+    <h1 class="text-center mb-5 fw-bold">EmTek Framework For Industry 4.0 </h1>
+    <div class="row g-4">
+
+      <!-- Smart Manufacturing -->
+      <div class="col-md-4">
+        <div class="card shadow-lg h-100 border-0" style="background:#f0c89d;">
+          <div class="card-body">
+            <h5 class="fw-bold"><i class="bi bi-cpu me-2"></i> Smart Manufacturing</h5>
+            <ul class="mb-0">
+              <li>Robotics & Automation</li>
+              <li>IoT-enabled Production</li>
+              <li>AI-driven Quality Control</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Digital Twin -->
+      <div class="col-md-4">
+        <div class="card shadow-lg h-100 border-0" style="background:#f0c89d;">
+          <div class="card-body">
+            <h5 class="fw-bold"><i class="bi bi-diagram-3-fill me-2"></i> Digital Twin</h5>
+            <ul class="mb-0">
+              <li>Real-time Simulation</li>
+              <li>Predictive Maintenance</li>
+              <li>Process Optimization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud & Data -->
+      <div class="col-md-4">
+        <div class="card shadow-lg h-100 border-0" style="background:#f0c89d;">
+          <div class="card-body">
+            <h5 class="fw-bold"><i class="bi bi-cloud-arrow-up-fill me-2"></i> Cloud & Data</h5>
+            <ul class="mb-0">
+              <li>Big Data Analytics</li>
+              <li>Cloud Storage & Security</li>
+              <li>AI-powered Insights</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cybersecurity -->
+      <div class="col-md-6">
+        <div class="card shadow-lg h-100 border-0" style="background:#f0c89d;">
+          <div class="card-body">
+            <h5 class="fw-bold"><i class="bi bi-shield-lock-fill me-2"></i> Cybersecurity</h5>
+            <ul class="mb-0">
+              <li>Data Protection Frameworks</li>
+              <li>Secure IoT Networks</li>
+              <li>Threat Detection & Response</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Workforce & Skills -->
+      <div class="col-md-6">
+        <div class="card shadow-lg h-100 border-0" style="background:#f0c89d;">
+          <div class="card-body">
+            <h5 class="fw-bold"><i class="bi bi-people-fill me-2"></i> Workforce & Skills</h5>
+            <ul class="mb-0">
+              <li>Upskilling in AI & Robotics</li>
+              <li>Remote Collaboration Tools</li>
+              <li>Human-Machine Interaction</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Key Highlights -->
+<section class="py-5" style="background: linear-gradient(to right, #f8f9fa, #e9ecef);">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Key Highlights of EmTeK</h2>
+    <div class="row g-4">
+
+      <!-- Highlight 1 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0 text-center p-3">
+          <div class="card-body">
+            <div class="mb-3 text-primary">
+              <i class="bi bi-lightning-charge-fill fs-1"></i>
+            </div>
+            <h6 class="fw-bold">100+ Startups Supported</h6>
+            <p class="text-muted small">Driving innovation in Industry 4.0 technologies.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Highlight 2 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0 text-center p-3">
+          <div class="card-body">
+            <div class="mb-3 text-success">
+              <i class="bi bi-cpu-fill fs-1"></i>
+            </div>
+            <h6 class="fw-bold">Focus Areas</h6>
+            <p class="text-muted small">AI, IoT, Analytics & Cybersecurity solutions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Highlight 3 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0 text-center p-3">
+          <div class="card-body">
+            <div class="mb-3 text-warning">
+              <i class="bi bi-people-fill fs-1"></i>
+            </div>
+            <h6 class="fw-bold">Collaboration</h6>
+            <p class="text-muted small">Partnering with academia & industry leaders.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Highlight 4 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0 text-center p-3">
+          <div class="card-body">
+            <div class="mb-3 text-danger">
+              <i class="bi bi-building fs-1"></i>
+            </div>
+            <h6 class="fw-bold">World-class Lab</h6>
+            <p class="text-muted small">State-of-the-art Industry 4.0 facility in Odisha.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="career.html">Career</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Infrastructure</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Research Papers</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Contact Us</h3>
+          <ul>
+             <li>Mobile No:	+91 9938036200</li>
+                 <li>Email ID:	coo.emtek@stpinext.in</li>
+                  <li>Address: EmTeK CoE, Ground floor, Fortune Tower, Maitri Vihar, Rail Vihar, Chandrasekharpur, Bhubaneswar, Odisha 751023 </li>
+                  <li>Address: EmTeK CoE, Satellite Centre, BPUT Campus, Chhend Colony, Rourkela, Odisha 769004</li>
+                 
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="icons/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Emtek CoE. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

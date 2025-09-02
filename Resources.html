@@ -1,0 +1,612 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resources | Industry 4.0</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Shared styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .banner-hero {
+      position: relative;
+      min-height: 48vh;
+      background: url('images/resources-banner.jpg') center/cover no-repeat;
+      border-radius: 0 0 18px 18px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      padding-top: 70px;
+    }
+    .banner-hero::after {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(240,240,240,0.9));
+    }
+    .banner-content { 
+      position: relative; 
+      z-index: 1; 
+      text-align: center; 
+      color: #1b1a1a; 
+      padding: 2rem 1rem; 
+    }
+    .resource-card:hover { 
+      transform: translateY(-5px); 
+      transition: .3s ease; 
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
+    }
+    .section-title { scroll-margin-top: 100px; }
+    footer {
+      background: #4f4fcd;
+      color: #eee;
+      padding: 40px 0 20px;
+    }
+    footer h3 {
+      color: #fff;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    footer ul li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    footer ul li a {
+      color: #ddd;
+      text-decoration: none;
+    }
+    footer ul li a:hover {
+      color: #42d6ea;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      border-top: 0 0 8px 8px;
+      padding-top: 15px;
+    }
+    .social-links img {
+      width: 28px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-light shadow-sm fixed-top">
+    <div class="container d-flex align-items-center justify-content-between py-2">
+      <a href="home.html" class="d-flex align-items-center">
+        <img src="emtek-1.png" alt="Emtek CoE Logo" style="max-height:60px;">
+      </a>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link fw-bold" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="facilities.html">Facilities</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="infrastructure.html">Infrastructure</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="career.html">Career</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold active" href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+      
+
+  
+
+  <!-- BANNER -->
+  <header class="banner-hero">
+    <div class="banner-content container">
+      <span class="badge bg-info text-dark badge-pill mb-3">Industry 4.0 Knowledge Hub</span>
+      <h1 class="display-5 fw-bold">Resources for AI, IoT, Robotics & Smart Manufacturing</h1>
+      <p class="lead mb-4">Industry 4.0 represents the fourth industrial revolution — combining automation, 
+        data exchange, and advanced technologies like Artificial Intelligence, IoT, Cloud, Robotics, and 
+        Cyber-Physical Systems to create smart factories. Explore resources that help you understand, 
+        implement, and grow with Industry 4.0 innovations.</p>
+      <a href="#resources" class="btn btn-light btn-lg"><i class="bi bi-filter"></i> Explore Resources</a>
+    </div>
+  </header>
+
+  <!-- BODY -->
+  <!-- Resources Section -->
+<section class="container my-5" id="resources">
+  <h2 class="mb-4 text-center">Industry 4.0 Resources</h2>
+
+  <div class="row g-4">
+
+    <!-- Resource 1: AI -->
+    <div class="col-md-4">
+      <div class="card resource-card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title"><i class="bi bi-cpu me-2 text-secondary"></i> Artificial Intelligence</h5>
+          <p class="card-text">Explore AI applications in manufacturing and smart factories.</p>
+          <a href="#" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#resource1Modal">Start Learning</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resource 2: Robotics -->
+    <div class="col-md-4">
+      <div class="card resource-card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title"><i class="bi bi-gear me-2 text-secondary"></i> Robotics</h5>
+          <p class="card-text">Learn how automation and robotics optimize production processes.</p>
+          <a href="#" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#resource3Modal">Start Learning</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resource 3: IIoT -->
+    <div class="col-md-4">
+      <div class="card resource-card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title"><i class="bi bi-cloud me-2 text-secondary"></i> IIoT</h5>
+          <p class="card-text">IIoT connects sensors, devices, and machines in industrial environments.</p>
+          <a href="#" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#resource2Modal">Start Learning</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resource 4: Cloud & Big Data -->
+    <div class="col-md-4">
+      <div class="card resource-card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title"><i class="bi bi-graph-up me-2 text-secondary"></i> Cloud Computing & Big Data</h5>
+          <p class="card-text">Cloud computing and big data analytics allow businesses to analyze and scale efficiently.</p>
+          <a href="#" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#resource4Modal">Start Learning</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resource 5: Cybersecurity -->
+    <div class="col-md-4">
+      <div class="card resource-card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title"><i class="bi bi-shield-lock me-2 text-secondary"></i> Cybersecurity</h5>
+          <p class="card-text">Protect smart factories from cyber threats and data breaches.</p>
+          <a href="#" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#resource5Modal">Start Learning</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resource 6: Smart Manufacturing -->
+    <div class="col-md-4">
+      <div class="card resource-card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title"><i class="bi bi-diagram-3 me-2 text-secondary"></i> Smart Manufacturing</h5>
+          <p class="card-text">See how cyber-physical systems and automation create flexible and intelligent production lines.</p>
+          <a href="#" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#resource6Modal">Start Learning</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resource 7: Blockchain -->
+    <div class="col-md-4">
+      <div class="card resource-card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title"><i class="bi bi-diagram-3 me-2 text-secondary"></i> Blockchain</h5>
+          <p class="card-text">Blockchain ensures secure, transparent, and tamper-proof records of manufacturing transactions.</p>
+          <a href="#" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#resource7Modal">Start Learning</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  
+<!-- AI Modal -->
+<div class="modal fade" id="resource1Modal" tabindex="-1" aria-labelledby="resource1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resource1ModalLabel">Artificial Intelligence</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Article 1: Introduction to AI -->
+        <section class="mb-4" >
+          <img src="other images/2b880846-6325-490c-a8c7-a67a4a6143df.png" class="img-fluid mb-3" alt="AI Introduction" style="border-radius:8px;">
+          <h6 class="fw-bold">1. Introduction to Artificial Intelligence</h6>
+          <p>Artificial Intelligence (AI) is the simulation of human intelligence in machines. These machines can learn, reason, and solve problems like humans. AI is transforming industries from healthcare to manufacturing by automating tasks and providing data-driven insights.</p>
+          <ul>
+            <li>AI mimics human cognitive functions</li>
+            <li>Applied in automation, robotics, data analysis, and customer services</li>
+            <li>Helps in predictive decision-making</li>
+          </ul>
+        </section>
+
+        <!-- Article 2: Machine Learning & Deep Learning -->
+        <section class="mb-4" >
+          
+          <h6 class="fw-bold">2. Machine Learning & Deep Learning</h6>
+          <p>Machine Learning (ML) allows systems to learn patterns from data and improve without explicit programming. Deep Learning uses neural networks with multiple layers to handle complex tasks like image recognition and NLP.</p>
+          <ul>
+            <li>Supervised, unsupervised, and reinforcement learning</li>
+            <li>Neural networks and deep neural networks</li>
+            <li>Applications: voice assistants, recommendation systems, fraud detection</li>
+          </ul>
+        </section>
+
+        <!-- Article 3: AI in Industry 4.0 -->
+        <section class="mb-4" >
+        
+          <h6 class="fw-bold">3. AI in Industry 4.0</h6>
+          <p>In Industry 4.0, AI drives smart manufacturing and digital transformation. It enables predictive maintenance, real-time quality control, and adaptive production scheduling.</p>
+          <ul>
+            <li>Predictive maintenance reduces downtime</li>
+            <li>Smart robotics and automation improve efficiency</li>
+            <li>Data-driven insights optimize operations</li>
+          </ul>
+        </section>
+
+        <!-- Article 4: Natural Language Processing (NLP) -->
+        <section class="mb-4" >
+          
+          <h6 class="fw-bold">4. Natural Language Processing (NLP)</h6>
+          <p>NLP enables machines to understand and interact using human language. Applications include chatbots, sentiment analysis, translation services, and virtual assistants.</p>
+          <ul>
+            <li>Text processing and language understanding</li>
+            <li>Conversational AI (chatbots, voice assistants)</li>
+            <li>Sentiment and intent analysis</li>
+          </ul>
+        </section>
+
+        <!-- Article 5: Computer Vision -->
+        <section class="mb-4">
+          
+          <h6 class="fw-bold">5. Computer Vision</h6>
+          <p>Computer Vision allows machines to interpret and process visual data. Used in object detection, facial recognition, automated inspection, and autonomous vehicles.</p>
+          <ul>
+            <li>Image recognition and classification</li>
+            <li>Object detection and tracking</li>
+            <li>Industrial quality inspection</li>
+          </ul>
+        </section>
+
+        <!-- Article 6: AI Ethics and Challenges -->
+        <section class="mb-4">
+          
+          <h6 class="fw-bold">6. AI Ethics and Challenges</h6>
+          <p>AI raises ethical questions about privacy, security, and job displacement. Responsible AI ensures fairness, transparency, and accountability.</p>
+          <ul>
+            <li>Bias and fairness in AI models</li>
+            <li>Data privacy concerns</li>
+            <li>Need for explainable AI</li>
+          </ul>
+        </section>
+
+        <!-- Article 7: Future of AI -->
+        <section class="mb-4">
+          
+          <h6 class="fw-bold">7. Future of AI</h6>
+          <p>AI continues to evolve with potential in autonomous systems, healthcare, smart cities, and personalized services. Integration with IoT, robotics, and cloud computing will reshape industries.</p>
+          <ul>
+            <li>AI-powered autonomous systems</li>
+            <li>Integration with other Industry 4.0 technologies</li>
+            <li>Continuous innovation and research</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- IIoT Modal -->
+<div class="modal fade" id="resource2Modal" tabindex="-1" aria-labelledby="resource2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resource2ModalLabel">Industrial Internet of Things (IIoT)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Article 1: Introduction to IIoT -->
+        <section class="mb-4">
+          <img src="other images/IIot.png" class="img-fluid mb-3" alt="IIoT Intro" style="border-radius:8px;">
+          <h6 class="fw-bold">1. What is IIoT?</h6>
+          <p>IIoT connects industrial devices, sensors, and machinery to collect and analyze data, enabling smarter operations.</p>
+          <ul>
+            <li>Real-time monitoring of machines</li>
+            <li>Predictive maintenance</li>
+            <li>Data-driven decision making</li>
+          </ul>
+        </section>
+
+        <!-- Article 2: Applications -->
+        <section class="mb-4">
+         
+          <h6 class="fw-bold">2. Applications in Industry</h6>
+          <p>IIoT is transforming manufacturing, logistics, and energy management.</p>
+          <ul>
+            <li>Smart factories and automation</li>
+            <li>Supply chain optimization</li>
+            <li>Energy efficiency monitoring</li>
+          </ul>
+        </section>
+
+        <!-- Article 3: Benefits & Challenges -->
+        <section class="mb-4">
+        
+          <h6 class="fw-bold">3. Benefits & Challenges</h6>
+          <p>IIoT offers efficiency and data insights but comes with cybersecurity and integration challenges.</p>
+          <ul>
+            <li>Enhanced operational efficiency</li>
+            <li>Data-driven predictive decisions</li>
+            <li>Security and network integration challenges</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+<!-- Robotics Modal -->
+<div class="modal fade" id="resource3Modal" tabindex="-1" aria-labelledby="resource3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resource3ModalLabel">Robotics</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Article 1: Introduction -->
+        <section class="mb-4">
+          <img src="other images/robotics 3.png" class="img-fluid mb-3" alt="Robotics Intro" style="border-radius:8px;">
+          <h6 class="fw-bold">1. Robotics Overview</h6>
+          <p>Robotics integrates mechanical systems, sensors, and AI to perform automated tasks.</p>
+          <ul>
+            <li>Industrial robots for production lines</li>
+            <li>Collaborative robots (cobots) working alongside humans</li>
+            <li>Automation in assembly and inspection</li>
+          </ul>
+        </section>
+
+        <!-- Article 2: Applications -->
+        <section class="mb-4">
+         
+          <h6 class="fw-bold">2. Applications</h6>
+          <p>Robotics is widely used across industries to improve efficiency, precision, and safety.</p>
+          <ul>
+            <li>Automotive assembly</li>
+            <li>Pharmaceuticals and healthcare automation</li>
+            <li>Warehouse and logistics automation</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Cloud & Big Data Modal -->
+<div class="modal fade" id="resource4Modal" tabindex="-1" aria-labelledby="resource4ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resource4ModalLabel">Cloud & Big Data</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Article 1: Introduction -->
+        <section class="mb-4">
+          <img src="other images/cloud and big data.png" class="img-fluid mb-3" alt="Cloud & Big Data Intro" style="border-radius:8px;">
+          <h6 class="fw-bold">1. Overview</h6>
+          <p>Cloud computing allows scalable storage and computation, while big data analytics extracts insights from massive datasets.</p>
+          <ul>
+            <li>Flexible and scalable computing resources</li>
+            <li>Data analytics for actionable insights</li>
+            <li>Integration with AI and IoT systems</li>
+          </ul>
+        </section>
+
+        <!-- Article 2: Benefits -->
+        <section class="mb-4">
+          
+          <h6 class="fw-bold">2. Benefits</h6>
+          <ul>
+            <li>Cost efficiency and scalability</li>
+            <li>Enhanced collaboration and accessibility</li>
+            <li>Real-time analytics for operational efficiency</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</div>
+  
+<!-- Cybersecurity Modal -->
+<div class="modal fade" id="resource5Modal" tabindex="-1" aria-labelledby="resource5ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resource5ModalLabel">Cybersecurity</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Article 1: Introduction -->
+        <section class="mb-4">
+          <img src="other images/cyber.png" class="img-fluid mb-3" alt="Cybersecurity Intro" style="border-radius:8px;">
+          <h6 class="fw-bold">1. Cybersecurity Overview</h6>
+          <p>Cybersecurity protects networks, systems, and data from unauthorized access and cyberattacks.</p>
+          <ul>
+            <li>Network and endpoint protection</li>
+            <li>Data privacy and compliance</li>
+            <li>Threat detection and response</li>
+          </ul>
+        </section>
+
+        <!-- Article 2: Best Practices -->
+        <section class="mb-4">
+          
+          <h6 class="fw-bold">2. Best Practices</h6>
+          <ul>
+            <li>Regular software updates</li>
+            <li>Strong authentication and access control</li>
+            <li>Employee cybersecurity training</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Smart Manufacturing Modal -->
+<div class="modal fade" id="resource6Modal" tabindex="-1" aria-labelledby="resource6ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resource6ModalLabel">Smart Manufacturing</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Article 1: Overview -->
+        <section class="mb-4">
+          <img src="other images/smart manu.png" class="img-fluid mb-3" alt="Smart Manufacturing Intro" style="border-radius:8px;">
+          <h6 class="fw-bold">1. Overview</h6>
+          <p>Smart manufacturing integrates AI, IoT, and robotics to optimize production processes.</p>
+          <ul>
+            <li>Real-time monitoring of production lines</li>
+            <li>Predictive maintenance</li>
+            <li>Efficiency and quality improvement</li>
+          </ul>
+        </section>
+
+        <!-- Article 2: Key Benefits -->
+        <section class="mb-4">
+          
+          <h6 class="fw-bold">2. Key Benefits</h6>
+          <ul>
+            <li>Adaptive workflow and scheduling</li>
+            <li>Lower production costs</li>
+            <li>Improved product quality and consistency</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Blockchain Modal -->
+<div class="modal fade" id="resource7Modal" tabindex="-1" aria-labelledby="resource7ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resource7ModalLabel">Blockchain</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Article 1: Introduction -->
+        <section class="mb-4">
+          <img src="other images/blockchain.png" class="img-fluid mb-3" alt="Blockchain Intro" style="border-radius:8px;">
+          <h6 class="fw-bold">1. What is Blockchain?</h6>
+          <p>Blockchain is a distributed ledger technology that ensures secure, transparent, and tamper-proof transactions.</p>
+          <ul>
+            <li>Immutable transaction records</li>
+            <li>Decentralized data management</li>
+            <li>Secure peer-to-peer operations</li>
+          </ul>
+        </section>
+
+        <!-- Article 2: Applications -->
+        <section class="mb-4">
+          
+          <h6 class="fw-bold">2. Applications</h6>
+          <ul>
+            <li>Supply chain transparency</li>
+            <li>Smart contracts</li>
+            <li>Industrial authentication & verification</li>
+            <li>Financial and data security</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!-- Quick Links -->
+        <div class="col-md-3">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="career.html">Career</a></li>
+          </ul>
+        </div>
+        <!-- Resources -->
+        <div class="col-md-3">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="infrastructure.html">Infrastructure</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Research Papers</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="col-md-3">
+          <h3>Contact Us</h3>
+          <ul>
+             <li>Mobile No:	+91 9938036200</li>
+                 <li>Email ID:	coo.emtek@stpinext.in</li>
+                  <li>Address: EmTeK CoE, Ground floor, Fortune Tower, Maitri Vihar, Rail Vihar, Chandrasekharpur, Bhubaneswar, Odisha 751023 </li>
+                  <li>Address: EmTeK CoE, Satellite Centre, BPUT Campus, Chhend Colony, Rourkela, Odisha 769004</li>
+                 
+          </ul>
+        </div>
+        <!-- Social -->
+        <div class="col-md-3">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="icons/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Emtek CoE. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

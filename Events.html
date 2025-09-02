@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | EmTeK CoE</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Shared styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Custom CSS -->
+  <style>
+
+    /* Background for the whole body */
+    body {
+      background-color: #8888c5; /* Light greyish background */
+    }
+
+    /* Banner */
+    .banner {
+      min-height: 40vh;
+      background: #ecedef;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .banner h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .banner p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    /* Event Section */
+    .event {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+    .event img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .event-content {
+      padding: 20px;
+    }
+    .event-content p {
+      margin-bottom: 0;
+    }
+    .event:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    @media (max-width: 768px) {
+      .event {
+        flex-direction: column !important;
+      }
+      .event-content {
+        text-align: center;
+      }
+    }
+
+    /* Footer style  */
+    footer {
+      background: #4f4fcd;
+      color: #eee;
+      padding: 40px 0 20px;
+    }
+    footer h3 {
+      color: #fff;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    footer ul li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    footer ul li a {
+      color: #ddd;
+      text-decoration: none;
+    }
+    footer ul li a:hover {
+      color: #42d6ea;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      padding-top: 15px;
+      border-top: 0 0 8px 8px;
+    }
+    .social-links img {
+      width: 28px;
+      margin-right: 10px;
+    }
+  
+
+    /* Zig-Zag layout */
+    .event:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    @media (max-width: 768px) {
+      .event {
+        flex-direction: column !important;
+      }
+      .event-content {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="banner text-center d-flex flex-column justify-content-center align-items-center">
+  <h1>Our Events</h1>
+  <p>Discover the latest happenings at EmTeK CoE</p>
+</section>
+
+
+   <!-- Header -->
+  <header class="bg-light shadow-sm fixed-top">
+    <div class="container d-flex align-items-center justify-content-between py-2">
+      <a href="home.html" class="d-flex align-items-center">
+        <img src="emtek-1.png" alt="Emtek CoE Logo" style="max-height:60px;">
+      </a>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link fw-bold" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="facilities.html">Facilities</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="infrastructure.html">Infrastructure</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold active" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="career.html">Career</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>s
+    <!-- Event Section -->
+ <div class="container">
+ <!-- Event 1 -->
+ <div class="event row align-items-center mb-5"> 
+<div class="col-md-5">
+ <img src="icons/event 1.png" alt="Event 1" class="img-fluid rounded"> 
+</div> <div class="col-md-7 event-content">
+     <p>MSME Hackathon 5.0, held at Siksha O Anusandhan University on 11th August 2025.</p>
+     </div> 
+    </div>
+ <!-- Event 2 --> 
+  <div class="event row align-items-center mb-5 flex-md-row-reverse"> 
+<div class="col-md-5"> 
+<img src="icons/event 2.png" alt="Event 2" class="img-fluid rounded"> 
+</div>
+ <div class="col-md-7 event-content"> 
+<p>EmTek CoE collaborated with @stpibbsr at #TiEco2025, shaping ideas for tomorrow’s ecosystem.</p> 
+</div> 
+</div> 
+<!-- Event 3 --> 
+ <div class="event row align-items-center mb-5"> 
+<div class="col-md-5">
+ <img src="icons/event 3.png" alt="Event 3" class="img-fluid rounded"> 
+</div> 
+<div class="col-md-7 event-content"> 
+<p>IEEE IES Industry Conclave 2025 on 8-10 August 2025.</p> 
+</div>
+ </div>
+  <!-- Event 4 --> 
+   <div class="event row align-items-center mb-5 flex-md-row-reverse">
+     <div class="col-md-5">
+         <img src="icons/event 4.png" alt="Event 4" class="img-fluid rounded"> 
+        </div> 
+        <div class="col-md-7 event-content"> 
+            <p>EmTek CoE conducted Bootcamp for startups and students of COEB, Bhubaneswar.</p> 
+        </div> 
+    </div>
+     <!-- Event 5 --> 
+      <div class="event row align-items-center mb-5"> 
+        <div class="col-md-5"> 
+            <img src="icons/event 5.png" alt="Event 5" class="img-fluid rounded">
+         </div> 
+         <div class="col-md-7 event-content">
+             <p>EmTeK CoE organized an outreach session at Ramadevi Women’s University, BBSR, engaging students & startups on #Industry4_0</p>
+             </div>
+             </div>
+              <!-- Event 6 --> 
+               <div class="event row align-items-center mb-5 flex-md-row-reverse">
+                 <div class="col-md-5"> 
+                    <img src="icons/event 6.png" alt="Event 6" class="img-fluid rounded">
+                 </div> 
+                 <div class="col-md-7 event-content">
+                     <p>stpiindia and @emtekcoe team engaged with the Hon'ble Vice Chancellor and faculty of @RDWUniversity, fostering collaboration and promoting #CallForProposal5.</p> 
+                    </div>
+                 </div>
+                  <!-- Event 7 -->
+                    <div class="event row align-items-center mb-5"> 
+                    <div class="col-md-5">
+                 <img src="icons/event 7.png" alt="Event 7" class="img-fluid rounded"> 
+                </div> 
+                <div class="col-md-7 event-content">
+             <p>EmTeK CoE organized an orientation program for startups under CFP 4.0.</p> 
+            </div>
+         </div> 
+         <!-- Event 8 --> 
+          <div class="event row align-items-center mb-5 flex-md-row-reverse">
+             <div class="col-md-5"> 
+                <img src="icons/event 8.png" alt="Event 8" class="img-fluid rounded">
+             </div> 
+             <div class="col-md-7 event-content">
+                 <p>EmTeK CoE had the privilege to interact with the Hon’ble Vice Chancellor and esteemed faculty members of VSSUT, Burla (Sambalpur).</p>
+                 </div>
+                 </div>
+                </div>
+    <!-- ✅ Footer  -->
+  <footer style="background: color #58377d;; color:white; padding:15px ;border-radius: 0 0 8px 8px;">
+    <div class="container">
+      <div class="row">
+        <!-- Quick Links -->
+        <div class="col-md-3">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="career.html">Career</a></li>
+          </ul>
+        </div>
+        <!-- Resources -->
+        <div class="col-md-3">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="events.html">Infrastructure</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Research Papers</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+       <!-- Contact -->
+        <div class="col-md-3">
+          <h3>Contact Us</h3>
+          <ul>
+             <li>Mobile No:	+91 9938036200</li>
+                 <li>Email ID:	coo.emtek@stpinext.in</li>
+                  <li>Address: EmTeK CoE, Ground floor, Fortune Tower, Maitri Vihar, Rail Vihar, Chandrasekharpur, Bhubaneswar, Odisha 751023 </li>
+                  <li>Address: EmTeK CoE, Satellite Centre, BPUT Campus, Chhend Colony, Rourkela, Odisha 769004</li>
+                 
+          </ul>
+        </div>
+           <!-- Social -->
+        <div class="col-md-3">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="icons/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <p class="text-center mb-0">&copy; 2025 EmTeK CoE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>
+
+  
+
+  

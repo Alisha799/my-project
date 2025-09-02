@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emtek CoE</title>
+   <link rel="stylesheet" href="style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- ✅ Swiper CSS (put inside <head>) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+<header>
+        <div class="logo">
+            <img src="emtek-1.png" alt="Emtek CoE Logo" style="max-height:60px; height:auto; width:auto;">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="infrastructure.html">Infrastructure</a></li>
+                <li><a href="events.html"> Events</a></li>
+                <li><a href="career.html">Career</a></li>
+                 <li><a href="resources.html">Resources</a></li>
+                
+            </ul>
+        </nav>
+        
+        
+  
+
+</header>
+
+
+<!-- Banner Section --> 
+ <section class="banner" id="home">
+   <div class="banner-content"> 
+
+   </div>
+   </section>
+
+<style>
+/* Banner Base Styles */
+.banner {
+    height: 400px; /* adjust as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    animation: bannerSlide 18s infinite linear;
+    padding-bottom: 20px; /* ✅ pushes next section down */
+}
+
+/* Dark overlay for readability */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+/* Content styling */
+.banner-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+/* Keyframes for rotating backgrounds */
+@keyframes bannerSlide {
+    0%   { background-image: url('banner/Gemini_Generated_Image_ujhiyoujhiyoujhi.png'); }
+    16.6% { background-image: url('banner/Gemini_Generated_Image_luhrkbluhrkbluhr.png'); }
+    33.2% { background-image: url('banner/Untitled design.png'); }
+    49.8% { background-image: url('banner/banner4.png'); }  /* New image */
+    66.4% { background-image: url('banner/banner5.png'); }  /* New image */
+    83%   { background-image: url('banner/banner6.png'); }  /* New image */
+    100%  { background-image: url('banner/Gemini_Generated_Image_ujhiyoujhiyoujhi.png'); }
+}
+
+</style>
+  
+<!-- About Section -->
+    <section id="about" class="objectives about-section text-white p-4 mb-4" style="background-color: #3568a0; border-radius: 10px;">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <p>
+     EmTek CoE focuses at creating a high potential ecosystem for carrying out Industry 4.0 & Analytics, Cyber Security & AI and other emerging technologies for industrial sector and Startups. It helps in building the skilled manpower and creating many entrepreneurs/Startups in IT sector. The main objective of EmTek CoE is to develop a world class “Industry 4.0 Lab” in Odisha and be the preferred start-up destination of the country. EmTek promotes entrepreneurship and innovation in emerging technology. EmTek brings in a pool of mentors, academicians, investors & consultants in market intelligence with the major focus on Product Development, Technology Enhancement by the application of Industry4.0 solutions.
+        </p>
+        <a class="btn btn-light mt-3" href="about.html">Go to About Page</a>
+      </div>
+    </section>  
+
+
+   
+
+
+
+   <!-- Introducing Section -->
+<section id="introducing" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4"></h2>
+    <div class="row align-items-center">
+
+      <!-- Left Side (Logo/Image) -->
+      <div class="col-md-5 text-center">
+        <img src="stpi-bbsr-logo1-2 (1) (1).png" alt="EmTek CoE" class="img-fluid" style="max-width:350px; height:auto; border-radius:10px;">
+      </div>
+
+      <!-- Right Side (Video) -->
+      <div class="col-md-7">
+        <video controls autoplay muted loop playsinline class="w-100 rounded shadow">
+          <source src="other images/VN20250817_173425.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+#introducing video {
+  border-radius: 12px;
+  max-height: 400px; /* optional to control height */
+  object-fit: cover;
+}
+</style>
+
+<!-- Domain at EmTeK CoE Section -->
+<section id="domain-emtek" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Domain At EmTeK CoE</h2>
+    
+    <!-- Full-width Swiper Slider -->
+    <div class="swiper domain-slider">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img src="other images/Artificial Intelligence.png" alt="Artificial Intelligence" class="img-fluid rounded shadow">
+          <div class="slide-caption">Artificial Intelligence</div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img src="other images/Cloud computing.png" alt="Cloud Computing" class="img-fluid rounded shadow">
+          <div class="slide-caption">Cloud Computing</div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <img src="other images/Data Analytics.png" alt="Big Data & Analytics" class="img-fluid rounded shadow">
+          <div class="slide-caption">Big Data & Analytics</div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <img src="other images/Data Security.png" alt="Cybersecurity" class="img-fluid rounded shadow">
+          <div class="slide-caption">Cybersecurity</div>
+        </div>
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+          <img src="other images/industry Internet of Things.png" alt="Industry Internet Of Things" class="img-fluid rounded shadow">
+          <div class="slide-caption">Industry Internet Of Things</div>
+        </div>
+        <!-- Slide 6 -->
+        <div class="swiper-slide">
+          <img src="other images/robotics.png" alt="Robotics" class="img-fluid rounded shadow">
+          <div class="slide-caption">Robotics</div>
+        </div>
+      </div>
+
+      <!-- Swiper Navigation -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".domain-slider", {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+<style>
+#domain-emtek .swiper {
+  width: 100%;
+  height: auto;  /* adjust height automatically */
+}
+
+#domain-emtek .swiper-slide {
+  display: flex;
+  flex-direction: column;  /* stack image + caption */
+  align-items: center;
+  overflow: hidden;
+}
+
+#domain-emtek .swiper-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+#domain-emtek .slide-caption {
+  margin-top: 15px;
+  font-size: 2.5rem;  /* adjust size */
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333;        /* solid text color */
+  opacity: 1;
+
+  /* Fade-in animation */
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+
+<!-- Leadership Section -->
+<section id="leadership" class="py-5 bg-light">
+  <div class="container">
+    <h1 class="text-center mb-5">Our Leadership</h1>
+    <div class="row justify-content-center">
+
+      <!-- Chief Mentor -->
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <div class="card shadow-lg border-0 rounded-4 mx-auto" style="max-width: 350px;">
+          <!-- Image -->
+          <img src="mentors/chief mentor.png" alt="Chief Mentor" 
+               style="width: 100%; height: 350px; object-fit: cover; border-top-left-radius: 12px; border-top-right-radius: 12px;">
+          <!-- Text Section -->
+          <div class="p-4" style="background-color: #dfa73d; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
+            <h4 class="fw-bold">Amarendra Sahu</h4>
+            <p class="fw-medium text-dark mb-1">Chief Mentor</p>
+            <p class="text-dark">Co-Founder &  Nestaway Technologies</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Head of CoE -->
+      <div class="col-md-5 text-center">
+        <div class="card shadow-lg border-0 rounded-4 mx-auto" style="max-width: 350px;">
+          <!-- Image -->
+          <img src="mentors/head of Coe.png" alt="Head of CoE" 
+               style="width: 100%; height: 350px; object-fit: cover; border-top-left-radius: 12px; border-top-right-radius: 12px;">
+          <!-- Text Section -->
+          <div class="p-4" style="background-color: #dfa73d; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
+            <h4 class="fw-bold">Shir Surya Kumar Pattanayak</h4>
+            <p class="fw-medium text-dark mb-1">Head of CoE</p>
+             <p class="text-dark">Jurisdictional Director, STPI Bhubaneswar</p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Mentors Section -->
+<section class="container" id="mentors" >
+  <h1 class="section-title">Our Mentors</h1>
+  <div class="slider-wrapper">
+    <div class="mentors-slider">
+     
+      <div class="card"><img src="mentors/Picture2.jpg" alt="Air Commodore NK"><h3>Air Commodore NK Parhi,</h3><p>Director IIG Technology </p></div>
+      <div class="card"><img src="mentors/Picture3.jpg" alt="Devesh Sinha"><h3>Devesh Sinha</h3><p>Founder,Cozentus</p></div>
+      <div class="card"><img src="mentors/Picture4.jpg" alt="Arun Patnaik"><h3>Arun Patnaik</h3><p>CEO Aabsys IT</p></div>
+      <div class="card"><img src="mentors/Picture5.jpg" alt="Ashwini Kumar Rath"><h3>Ashwini Kumar Rath</h3><p>Founder Director & CEO,Batoi Sys</p></div>
+      <div class="card"><img src="mentors/Picture6.png" alt="Rama Shankar"><h3>Rama Shankar</h3><p>CEO, Maxbyte</p></div>
+      <div class="card"><img src="mentors/Picture7.png" alt="Priyadarshi Nanu Pany"><h3>Priyadarshi Nanu Pany</h3><p>Founder & CEO,CSM Tech</p></div>
+      <div class="card"><img src="mentors/Picture8.jpg" alt="Mr.Soumya Kanta Padhi"><h3>Mr.Soumya Kanta Padhi</h3><p>MD & CEO,Indorient</p></div>
+      <div class="card"><img src="mentors/Picture9.png" alt="Mr. Smruti Parida"><h3>Mr.Smruti Parida</h3><p>ex.Nestaway Technologies, Autosave Technologies</p></div>
+      <div class="card"><img src="mentors/Picture10.png" alt="Debasish Dash"><h3>Debasish Dash</h3><p>Industry Leader, CXO TIE</p></div>
+      <div class="card"><img src="mentors/Picture11.jpg" alt="Deboo Patnaik"><h3>Deboo Patnaik</h3><p>Bhubaneswar</p></div>
+      <div class="card"><img src="mentors/Picture12.png" alt="Ms.Poornima Bethmangalkar"><h3>Ms.Poornima Bethmangalkar</h3><p>Happiestmind Technologies Pvt Ltd</p></div>
+      <div class="card"><img src="mentors/Picture13.jpg" alt="Rabi Patnaik"><h3>Rabi Patnaik</h3><p>Industry Leader, CXO</p></div>
+
+
+      <!-- Duplicate set of 13 cards -->
+      <div class="card"><img src="mentors/Picture1.jpg" alt="Amarendra Sahu"><h3>Chief Mentor Amarendra Sahu Co-Founder & CEO</h3><p>Nestaway Technologies</p></div>
+      <div class="card"><img src="mentors/Picture2.jpg" alt="Air Commodore NK"><h3>Air Commodore NK Parhi,</h3><p>Director IIG Technology </p></div>
+      <div class="card"><img src="mentors/Picture3.jpg" alt="Devesh Sinha"><h3>Devesh Sinha</h3><p>Founder,Cozentus</p></div>
+      <div class="card"><img src="mentors/Picture4.jpg" alt="Arun Patnaik"><h3>Arun Patnaik</h3><p>CEO Aabsys IT</p></div>
+      <div class="card"><img src="mentors/Picture5.jpg" alt="Ashwini Kumar Rath"><h3>Ashwini Kumar Rath</h3><p>Founder Director & CEO,Batoi Sys</p></div>
+      <div class="card"><img src="mentors/Picture6.png" alt="Rama Shankar"><h3>Rama Shankar</h3><p>CEO, Maxbyte</p></div>
+      <div class="card"><img src="mentors/Picture7.png" alt="Priyadarshi Nanu Pany"><h3>Priyadarshi Nanu Pany</h3><p>Founder & CEO,CSM Tech</p></div>
+      <div class="card"><img src="mentors/Picture8.jpg" alt="Mr.Soumya Kanta Padhi"><h3>Mr.Soumya Kanta Padhi</h3><p>MD & CEO,Indorient</p></div>
+      <div class="card"><img src="mentors/Picture9.png" alt="Mr. Smruti Parida"><h3>Mr.Smruti Parida</h3><p>ex.Nestaway Technologies, Autosave Technologies</p></div>
+      <div class="card"><img src="mentors/Picture10.png" alt="Debasish Dash"><h3>Debasish Dash</h3><p>Industry Leader, CXO TIE</p></div>
+      <div class="card"><img src="mentors/Picture11.jpg" alt="Deboo Patnaik"><h3>Deboo Patnaik</h3><p>Bhubaneswar</p></div>
+      <div class="card"><img src="mentors/Picture12.png" alt="Ms.Poornima Bethmangalkar"><h3>Ms.Poornima Bethmangalkar</h3><p>Happiestmind Technologies Pvt Ltd</p></div>
+      <div class="card"><img src="mentors/Picture13.jpg" alt="Rabi Patnaik"><h3>Rabi Patnaik</h3><p>Industry Leader, CXO</p></div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+/* Mentors Section */
+#mentors {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 1600px;
+  padding: 0 40px;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.mentors-slider {
+  display: flex;
+  gap: 20px;
+  animation: slideMentors 30s linear infinite;
+}
+
+.mentors-slider .card {
+  min-width: 300px; /* controls 4 visible at once (4*300 + gaps ≈ screen width) */
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.mentors-slider .card:hover {
+  transform: translateY(-5px);
+}
+
+.mentors-slider img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; /* makes circular */
+  object-fit: cover;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.mentors-slider h3 {
+  margin: 8px 0 4px;
+  font-size: 18px;
+}
+
+.mentors-slider p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Sliding animation */
+@keyframes slideMentors {
+  0% { transform: translateX(0); }
+100% { transform: translateX(calc(-300px * 13 - 20px * 12 + 100vw)); }
+}
+</style>
+
+
+<!-- Incubated Startups + Our Journey Banner -->
+ <section class="py-5" style="
+    background: linear-gradient(135deg, #b36500, #e6dd2e);
+    border-radius: 12px;
+    overflow: hidden;
+    background-clip: padding-box;">
+
+ <div class="container">
+
+    <!-- Title at top center -->
+    <h1 class="fw-bold text-white text-center mb-4">Information About Incubated Startups</h1>
+    <h4 class=" fw-bold text-light mb-4 text-center">Grow with us</h4>
+
+    <!-- Incubated Startups -->
+    <div class="row g-0 align-items-center mb-5">
+      
+      <!-- Left Side -->
+      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center mb-4 mb-lg-0">
+        
+        
+        <!-- Logo -->
+        <img src="other images/logo 3.png" alt="Logo" style="height: 300px; display: block; width: 100%; object-fit: contain;">
+      </div>
+
+      <!-- Right Side (Apply Box) -->
+      <div class="col-lg-6">
+        <div class="p-4 rounded-4 shadow text-center" style="background-color: #07a4ff;">
+          <h5 class="fw-bold mb-3 text-dark">For incubation at EmTeK CoE</h5>
+          <a href="https://sayuj.net/login" target="_blank" class="btn btn-dark fw-bold px-4 py-2 rounded-pill shadow">
+            Register Here
+          </a>
+
+         <!-- Second Button -->
+    <a href="https://sayuj.net/contest-detail?U2FsdGVkX1%2FqoZndhTnAKNgaaRI%20iOopobNzM9vCTFOk2lnNc9mEhOXzyPv4xwnVlQsXgnAG7ttuAEgZuZuF42%20lCypo84BLbExQjE7gSzbKIO9c3Hc4IS1jgvIEw3dzxWn6D4Tu1i7a2Xn3rRQREkjLPvIQLm9gt9vvlvFICqgGwv%2F6%2F2DauIKg8NAHCzzO=" 
+   target="_blank" 
+   class="btn btn-light fw-bold px-4 py-2 rounded-pill shadow mt-3">
+   Register Here <br><span style="font-size: 0.9em;">(24*7)</span>
+   </a>
+
+   
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Our Journey So Far --> 
+     <h2 class="fw-bold mb-1 text-white text-center">Our Journey So Far</h2>
+      
+      <div class="row g-4 text-center">
+         <!-- Startups -->
+       <div class="col-12 col-sm-6 col-lg-3">
+         <div class="card h-100 shadow-sm border-0 rounded-4 journey-card">
+         <div class="card-body"> <div class="journey-icon text-primary fs-2 mb-2"> 
+        <i class="bi bi-rocket-takeoff-fill"></i> 
+        </div>
+       <div class="h2 mb-0 text-dark"> 
+      <span class="counter" data-target="35">0</span>+ 
+      </div> 
+      <div class="text-muted small">Startups</div> 
+      </div>
+     </div>
+      </div>
+     <!-- Mentors -->
+     <div class="col-12 col-sm-6 col-lg-3"> 
+    <div class="card h-100 shadow-sm border-0 rounded-4 journey-card"> 
+    <div class="card-body"> <div class="journey-icon text-success fs-2 mb-2">
+     <i class="bi bi-people-fill"></i>
+     </div> 
+    <div class="h2 mb-0 text-dark"> 
+    <span class="counter" data-target="15">0</span>+ 
+    </div>  
+    <div class="text-muted small">Mentors</div> 
+    </div> 
+    </div> 
+    </div> 
+    <!-- Jobs --> 
+     <div class="col-12 col-sm-6 col-lg-3"> 
+      <div class="card h-100 shadow-sm border-0 rounded-4 journey-card"> 
+      <div class="card-body"> 
+        <div class="journey-icon text-warning fs-2 mb-2"> 
+        <i class="bi bi-briefcase-fill"></i> 
+        </div> <div class="h2 mb-0 text-dark"> 
+        <span class="counter" data-target="80">0</span>+ 
+        </div> 
+      <div class="text-muted small">Jobs Created</div> 
+      </div> 
+      </div> 
+      </div> 
+      <!-- Revenue --> 
+      <div class="col-12 col-sm-6 col-lg-3"> 
+      <div class="card h-100 shadow-sm border-0 rounded-4 journey-card"> 
+      <div class="card-body"> 
+      <div class="journey-icon text-danger fs-2 mb-2"> 
+      <i class="bi bi-calendar-event-fill"></i> 
+      </div> <div class="h2 mb-0 text-dark"> 
+      <span class="counter" data-target="62">0</span>+ 
+      </div> 
+      <div class="text-muted small">Revenue Generated</div> 
+      </div> 
+      </div> 
+      </div> 
+      </div> 
+      </div> 
+      </section> 
+      <!-- Counter Animation Script --> 
+       <script>
+        document.addEventListener("DOMContentLoaded", () => { 
+          const counters = document.querySelectorAll(".counter"); 
+          counters.forEach(counter => { 
+            const updateCount = () => { 
+            const target = +counter.getAttribute("data-target");
+             const count = +counter.innerText; const increment = Math.ceil(target / 100); 
+          if (count < target) { counter.innerText = count + increment; setTimeout(updateCount, 30); 
+
+          } 
+          else { counter.innerText = target; // stop at exact number 
+           } 
+           }; 
+           updateCount();
+            });
+             });
+           </script>
+
+
+
+<!-- Incubated Startups Section -->
+<section class="container" id="startups">
+  <h1 class="section-title" style="font-weight: bold;">Incubated Startups</h1>
+
+  <div class="swiper startups-slider">
+    <div class="swiper-wrapper">
+      <!-- 27 Startup Slides -->
+      <div class="swiper-slide"><img src="startup logo/Biotechnology Company Logo - Vibrant Emblem (1).png" alt="Startup 1"></div>
+      <div class="swiper-slide"><img src="startup logo/ChatGPT Image Aug 12, 2025, 05_39_15 PM.png" alt="Startup 2"></div>
+      <div class="swiper-slide"><img src="startup logo/ChatGPT Image Aug 12, 2025, 05_42_17 PM.png" alt="Startup 3"></div>
+      <div class="swiper-slide"><img src="startup logo/ChatGPT Image Aug 12, 2025, 05_58_35 PM.png" alt="Startup 4"></div>
+      <div class="swiper-slide"><img src="startup logo/ChatGPT Image Aug 12, 2025, 06_11_39 PM.png" alt="Startup 5"></div>
+      <div class="swiper-slide"><img src="startup logo/ChatGPT Image Aug 12, 2025, 06_20_48 PM.png" alt="Startup 6"></div>
+      <div class="swiper-slide"><img src="startup logo/ChatGPT Image Aug 12, 2025, 06_23_24 PM.png" alt="Startup 7"></div>
+      <div class="swiper-slide"><img src="startup logo/Eagle_Eye_Logo.jpg" alt="Startup 8"></div>
+      <div class="swiper-slide"><img src="startup logo/Emblem Logo for Debdarshan Consulting.png" alt="Startup 9"></div>
+      <div class="swiper-slide"><img src="startup logo/Gemini_Generated_Image_7dac5p7dac5p7dac.png" alt="Startup 10"></div>
+      <div class="swiper-slide"><img src="startup logo/Gemini_Generated_Image_dnp0ejdnp0ejdnp0.png" alt="Startup 11"></div>
+      <div class="swiper-slide"><img src="startup logo/Gemini_Generated_Image_xosnbpxosnbpxosn.png" alt="Startup 12"></div>
+      <div class="swiper-slide"><img src="startup logo/Gemini_Generated_Image_z0iz0iz0iz0iz0iz.png" alt="Startup 13"></div>
+      <div class="swiper-slide"><img src="startup logo/hatix Solutions Pvt. ltd. (1).png" alt="Startup 14"></div>
+      <div class="swiper-slide"><img src="startup logo/images.png" alt="Startup 15"></div>
+      <div class="swiper-slide"><img src="startup logo/Logo with deep blue and silver colors.png" alt="Startup 16"></div>
+      <div class="swiper-slide"><img src="startup logo/Mo Oil Ventures Pvt. Ltd Wordmark Logo.png" alt="Startup 17"></div>
+      <div class="swiper-slide"><img src="startup logo/OSTRAVION Technology Logo with Stylized Circuit Icon.png" alt="Startup 18"></div>
+      <div class="swiper-slide"><img src="startup logo/Professional Logo for Education Company.png" alt="Startup 19"></div>
+      <div class="swiper-slide"><img src="startup logo/Professional Logo Light Blue and Dark Grey.png" alt="Startup 20"></div>
+      <div class="swiper-slide"><img src="startup logo/Sleek Logo Atibha R&D with Abstract Icon.png" alt="Startup 21"></div>
+      <div class="swiper-slide"><img src="startup logo/Start-Up Logo - AutogradeX.png" alt="Startup 22"></div>
+      <div class="swiper-slide"><img src="startup logo/Urban Flat Vector Logo for Zeroo.png" alt="Startup 23"></div>
+      <div class="swiper-slide"><img src="startup logo/Wordmark Healthcare Logo with Heartbeat Line.png" alt="Startup 24"></div>
+      <div class="swiper-slide"><img src="startup logo/Wordmark Logo with Crown and Arrow.png" alt="Startup 25"></div>
+      <div class="swiper-slide"><img src="startup logo/Wordmark Logo with Stethoscope and Circuit Patterns.png" alt="Startup 26"></div>
+      <div class="swiper-slide"><img src="startup logo/Y3Xlogo-removebg-preview-e1724822972180.png" alt="Startup 27"></div>
+    </div>
+
+    <!-- Swiper navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- Swiper JS Init -->
+<script>
+  var swiperStartups = new Swiper(".startups-slider", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    centeredSlides: false,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".startups-slider .swiper-button-next",
+      prevEl: ".startups-slider .swiper-button-prev",
+    },
+    pagination: {
+      el: ".startups-slider .swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+<!-- CSS -->
+<style>
+  #startups {
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  #startups .swiper {
+    padding: 20px 10px;
+  }
+
+  #startups .swiper-slide {
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .section-title {
+  font-weight: bold;
+}
+
+
+  /* ✅ Keep all images same size */
+  #startups img {
+    width: 100%;
+    height: 200px; /* fixed height for uniformity */
+    object-fit: contain; /* crop to fit */
+    border-radius: 0;
+  }
+
+  #startups h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+  }
+
+  #startups p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+</style>
+
+
+
+
+<!-- Partners Section -->
+<section class="container" id="partners">
+  <h1 class="section-title" style="font-weight: bold;">Partners</h1>
+  <div class="partners-slider">
+    <div class="slide-track">
+      <div class="slide"><img src="partners/508-5089593_happiestminds-logo-colour-happiest-minds-technologies-logo-hd-removebg-preview (1).png" alt="Partner 1"></div>
+      <div class="slide"><img src="partners/621774fa1dc231645704442.jpg" alt="Partner 2"></div>
+      <div class="slide"><img src="partners/cozentus_logo.jpg" alt="Partner 3"></div>
+      <div class="slide"><img src="partners/images (1).png" alt="Partner 4"></div>
+      <div class="slide"><img src="partners/images.png" alt="Partner 5"></div>
+      <div class="slide"><img src="partners/Picture14.png" alt="Partner 6"></div>
+      <div class="slide"><img src="partners/Picture15.png" alt="Partner 7"></div>
+      <div class="slide"><img src="partners/Picture16.png" alt="Partner 8"></div>
+      <div class="slide"><img src="partners/Picture17.png" alt="Partner 9"></div>
+      <div class="slide"><img src="partners/Picture18.png" alt="Partner 10"></div>
+      <div class="slide"><img src="partners/Picture19.jpg" alt="Partner 11"></div>
+      <div class="slide"><img src="partners/Picture20.png" alt="Partner 12"></div>
+      <div class="slide"><img src="partners/Picture21.png" alt="Partner 13"></div>
+      <div class="slide"><img src="partners/Picture22.png" alt="Partner 14"></div>
+      <div class="slide"><img src="partners/Picture23.jpg" alt="Partner 15"></div>
+      <div class="slide"><img src="partners/sddefault.jpg" alt="Partner 16"></div>
+
+
+      <!-- Duplicate slides for seamless loop -->
+      <div class="slide"><img src="partners/508-5089593_happiestminds-logo-colour-happiest-minds-technologies-logo-hd-removebg-preview (1).png" alt="Partner 1"></div>
+      <div class="slide"><img src="partners/621774fa1dc231645704442.jpg" alt="Partner 2"></div>
+      <div class="slide"><img src="partners/cozentus_logo.jpg" alt="Partner 3"></div>
+      <div class="slide"><img src="partners/images (1).png" alt="Partner 4"></div>
+      <div class="slide"><img src="partners/images.png" alt="Partner 5"></div>
+      <div class="slide"><img src="partners/Picture14.png" alt="Partner 6"></div>
+      <div class="slide"><img src="partners/Picture15.png" alt="Partner 7"></div>
+      <div class="slide"><img src="partners/Picture16.png" alt="Partner 8"></div>
+      <div class="slide"><img src="partners/Picture17.png" alt="Partner 9"></div>
+      <div class="slide"><img src="partners/Picture18.png" alt="Partner 10"></div>
+      <div class="slide"><img src="partners/Picture19.jpg" alt="Partner 11"></div>
+      <div class="slide"><img src="partners/Picture20.png" alt="Partner 12"></div>
+      <div class="slide"><img src="partners/Picture21.png" alt="Partner 13"></div>
+      <div class="slide"><img src="partners/Picture22.png" alt="Partner 14"></div>
+      <div class="slide"><img src="partners/Picture23.jpg" alt="Partner 15"></div>
+      <div class="slide"><img src="partners/sddefault.jpg" alt="Partner 16"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Section style */
+#partners {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+.partners-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(200px * 16); /* 16 logos * 2 (duplicated) */
+  animation: scroll 20s linear infinite;
+}
+
+.slide {
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  
+}
+
+.slide img:hover {
+  transform: scale(1.1); /* zoom effect on hover */
+}
+
+/* Animation for continuous scroll */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+ 100% { transform: translateX(calc(-300px * 16 - 20px * 12 + 100vw)); }
+}
+.section-title {
+  font-weight: bold;
+}
+
+</style>
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-column column1">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#" style="font-weight:bold;">Home</a></li>
+                <li><a href="#" style="font-weight:bold;">About Us</a></li>
+                <li><a href="#" style="font-weight:bold;">Facilities</a></li>
+                <li><a href="#" style="font-weight:bold;">Events</a></li>
+                <li><a href="#" style="font-weight:bold;">Career</a></li>
+            </ul>
+        </div>
+        <div class="footer-column column2">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">Infrastructure</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Research Papers</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-column column3">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Mobile No:	+91 9938036200</li>
+                 <li>Email ID:	coo.emtek@stpinext.in</li>
+                  <li>Address: EmTeK CoE, Ground floor, Fortune Tower, Maitri Vihar, Rail Vihar, Chandrasekharpur, Bhubaneswar, Odisha 751023 </li>
+                  <li>Address: EmTeK CoE, Satellite Centre, BPUT Campus, Chhend Colony, Rourkela, Odisha 769004</li>
+                 
+            </ul>
+        </div>
+        <div class="footer-column column4">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><img src="icons/facebook.png" alt="Facebook icon"></a>
+                <a href="#"><img src="icons/twitter.png" alt="Twitter icon"></a>
+                <a href="#"><img src="icons/linkedin.png" alt="LinkedIn icon"></a>
+                <a href="#"><img src="icons/instagram.png" alt="Instagram icon"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Emtek CoE. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+   <script src="script.js"></script>
+
+  
+  
+</body>
+</html>
